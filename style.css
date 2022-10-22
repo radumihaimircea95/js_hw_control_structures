@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  font-size: 18px;
+  padding: 10px;
+}
+
+#title {
+  font-size: 28px;
+}
+
+button {
+  font-size: 15px;
+  padding: 2px;
+}
+
+#fzBz {
+  text-align: center;
+  overflow-wrap: break-word;
+}
+
+input {
+  width: 400px;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Control structures</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">JavaScript Control structures homework</h1>
+      <section class="ex1">
+        <h4>Using control structures, do the following:</h4>
+        <p><b>1.</b>a. display the numbers from 1 to 20</p>
+        <button type="button" id="oneToTwenty">Click to show the result</button>
+        <div id="ex1a"></div>
+        <p>b. display the odd numbers from 1 to 20</p>
+        <button type="button" id="showOdd">Show odd numbers</button>
+        <div id="odd"></div>
+      </section>
+      <section class="ex2">
+        <h4>2. For var list = [2, 3, 5, 7, 5, 3]:</h4>
+
+        <p>a) compute the sum of the elements of an array</p>
+        <button type="button" id="btn" onclick="listSum()">
+          Sum of numbers
+        </button>
+        <div id="sumOfElements"></div>
+        <p>
+          b) compute the maximum of the elements of an array and display it in
+          the console
+        </p>
+        <button type="button" onclick="maxNumber()">Show the maximum</button>
+        <div id="maxNum"></div>
+      </section>
+      <p>c) compute how many times a certain element appears in an array</p>
+      <p>Type a number from the list to see how many times it appears:</p>
+      <input type="number" id="count" />
+      <button type="button" onclick="howManyTimes()">Submit</button>
+      <p id="countNumber"></p>
+
+      <!--Fibonacci elements-->
+      <h4>3. Write a program to print Fibonacci series</h4>
+      <p>Type how many Fibonacci elements you want to be outputed:</p>
+      <input
+        type="number"
+        id="fiboInput"
+        placeholder="Type a number of Fibonacci elements..."
+      />
+      <button type="button" id="outputFibo" onclick="fiboNumbers()">
+        Submit
+      </button>
+      <p id="fiboOutputText"></p>
+
+      <!--Fizz Buzz-->
+      <div class="fizzBuzz">
+        <h4>4. Display the FizzBuzz elements between 1 and 100</h4>
+        <p>Press the button below to see the FizzBuzz elements</p>
+        <button type="button" onclick="fizzBuzz()" on>FizzBuzz</button>
+        <p id="fzBz"></p>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
